@@ -6,7 +6,7 @@ When using [DRF](https://www.django-rest-framework.org) routers you have a choic
 i.e `DefaultRouter(trailing_slash=False)`. You can't however have it both ways, as in ignore them.
 
 This package defines a very simple middleware class that removes trailing slashes from urls if they have one.
-So in order to ignore trailing slashes and have `/api/some_url` be equivalent to `/api/some_url/` simply install the package and add the middleware class as the first entry in the MIDDLEWARE list. Please note that middleware [changed in django 1.10](https://docs.djangoproject.com/en/1.10/topics/http/middleware/) and this this pacakge requires django version >= 1.10.
+So in order to ignore trailing slashes and have `/api/some_url` be equivalent to `/api/some_url/` simply install the package and add the middleware class as the first entry in the MIDDLEWARE list. Please note that middleware [changed in django 1.10](https://docs.djangoproject.com/en/1.10/topics/http/middleware/) and thus this pacakge requires django version >= 1.10.
 
 ```python
 MIDDLEWARE = [
