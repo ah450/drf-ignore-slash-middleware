@@ -15,3 +15,7 @@ MIDDLEWARE = [
 	# Rest of your middleware
 ]
 ```
+
+
+# Installation
+`pip install drf-ignore-slash-middleware`
